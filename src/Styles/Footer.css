@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.footer{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(34, 115, 173, 0.699),rgba(19, 78, 119, 0.747),rgba(11, 48, 75, 0.973));  
+   
+}
+.p_htext{
+    position: absolute;
+    font-weight: 500;
+    font-size: 32px;
+    top: 30%;
+    left: 45%;
+    transform: translate(-40%,-50%);
+}
+.btn_SB{
+    position: absolute;
+    font-size: 14px;
+    top: 45%;
+    left: 42%;
+    transform: translate(-40%,-50%);
+    font-weight: 600;
+    padding: 16px 30px;
+    color: rgb(55, 128, 153);  
+    border-radius: 22px;border: solid 1px rgb(121, 119, 119);
+    cursor: pointer;
+}
+.btn_SB:active{    
+    animation-duration: 2s;
+    scale: 0.90;
+    animation-delay: 2s;
+  }
+.btn_Cont{
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    top: 45%;
+    left: 53%;
+    transform: translate(-40%,-50%);
+    padding: 16px 30px;
+    color: rgb(56, 140, 168); 
+    border-radius: 22px;border: solid 1px rgb(121, 119, 119);
+    cursor: pointer;
+}
+.btn_Cont:active{    
+    animation-duration: 2s;
+    scale: 0.90;
+    animation-delay: 2s;
+  }
+  .E_email{
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    top: 55%;
+    left: 35%;
+    transform: translate(-40%,-50%);
+  }
