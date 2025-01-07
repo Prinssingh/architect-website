@@ -20,7 +20,7 @@ function Header() {
     })
       })
     return ( 
-        <div className=" container header ">
+        <div className=" container-fluid header ">
             {/* --------cursor------- */}
              <div className="cursor"
                 style={{

@@ -5,16 +5,17 @@
 .footer{
     width: 100%;
     height: 100vh;
+    color: white;   
     background:linear-gradient(rgba(34, 115, 173, 0.699),rgba(19, 78, 119, 0.747),rgba(11, 48, 75, 0.973));  
    
 }
 .p_htext{
     position: absolute;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 36px;
     top: 30%;
     left: 45%;
-    transform: translate(-40%,-50%);
+    transform: translate(-40%,-50%);    
 }
 .btn_SB{
     position: absolute;
@@ -53,8 +54,66 @@
   .E_email{
     position: absolute;
     font-weight: 600;
-    font-size: 14px;
-    top: 55%;
+    padding-bottom: 5px;
+    font-size: 16px;
+    top: 88%;
+    color: rgb(199, 197, 197);
     left: 35%;
     transform: translate(-40%,-50%);
+  }
+  .So_media{
+    display: flex;
+    position: absolute;
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-size: 16px;
+    top: 88%;
+    color: rgb(199, 197, 197);
+    left: 58%;
+    transform: translate(-40%,-50%);  
+    cursor: pointer;
+  }
+  .be_icon{
+    margin-right: 20px;
+  }
+  .up_icon{
+    margin-right: 20px;
+  }
+  .insta_icon{
+    margin-right: 20px;
+  }
+  .tele_icon{
+    margin-right: 20px;
+  }
+  .wa_icon{
+    margin-right: 20px;
+  }
+  .P_Policy{
+    margin-right: 20px;
+    color: rgb(114, 113, 113);
+    font-size: 11px;
+    position: absolute;
+    top: 92%;
+    left: 54%;
+    white-space: nowrap;
+  }
+  .D_DEV{
+    margin-right: 20px;
+    color: rgb(114, 113, 113);
+    font-size: 11px;
+    position: absolute;
+    top: 92%;
+    left: 240%;
+    white-space: nowrap;
+    cursor: auto;
+  }
+  .de_VEB{
+    color: white;
+    position: absolute;
+    top: 88%;
+    left: 93%;
+    
+  }
+  a{
+    text-decoration: none;
   }

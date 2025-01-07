@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 function AllComp() {
     return ( 
-        <div className="container">
+        <div className="container-sm">
 
             <div className="header">
                 {/* <HeaderNav/> */}
