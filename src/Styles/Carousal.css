@@ -1,0 +1,21 @@
+.carousal{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.carousal > .images {
+    width: 100%;
+    height: 100%;
+}
+.carousal > .images >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

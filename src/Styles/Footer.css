@@ -6,22 +6,24 @@
     width: 100%;
     height: 100vh;
     color: white;   
-    background:linear-gradient(rgba(34, 115, 173, 0.699),rgba(19, 78, 119, 0.747),rgba(11, 48, 75, 0.973));  
+    background:linear-gradient(rgba(29, 99, 150, 0.699),rgba(14, 59, 92, 0.822),rgba(12, 51, 78, 0.973));  
    
 }
 .p_htext{
     position: absolute;
     font-weight: 600;
     font-size: 36px;
-    top: 30%;
-    left: 45%;
+    margin-top: 14%;
+    /* top: 30%; */
+    left: 48%;
     transform: translate(-40%,-50%);    
 }
 .btn_SB{
     position: absolute;
     font-size: 14px;
-    top: 45%;
-    left: 42%;
+    /* top: 45%; */
+    margin-top: 22%;
+    left: 45%;
     transform: translate(-40%,-50%);
     font-weight: 600;
     padding: 16px 30px;
@@ -38,8 +40,9 @@
     position: absolute;
     font-weight: 600;
     font-size: 14px;
-    top: 45%;
-    left: 53%;
+    /* top: 45%; */
+    margin-top: 22%;
+    left: 57%;
     transform: translate(-40%,-50%);
     padding: 16px 30px;
     color: rgb(56, 140, 168); 
@@ -56,9 +59,10 @@
     font-weight: 600;
     padding-bottom: 5px;
     font-size: 16px;
-    top: 88%;
+    /* top: 88%; */
+    margin-top: 40%;
     color: rgb(199, 197, 197);
-    left: 35%;
+    left: 32%;
     transform: translate(-40%,-50%);
   }
   .So_media{
@@ -67,7 +71,8 @@
     font-weight: 600;
     padding-bottom: 5px;
     font-size: 16px;
-    top: 88%;
+    /* top: 88%; */
+    margin-top: 40%;
     color: rgb(199, 197, 197);
     left: 58%;
     transform: translate(-40%,-50%);  
@@ -93,7 +98,8 @@
     color: rgb(114, 113, 113);
     font-size: 11px;
     position: absolute;
-    top: 92%;
+    /* top: 92%; */
+    margin-top: 14%;
     left: 54%;
     white-space: nowrap;
   }
@@ -102,15 +108,17 @@
     color: rgb(114, 113, 113);
     font-size: 11px;
     position: absolute;
-    top: 92%;
-    left: 240%;
+    /* top: 92%; */
+    margin-top: 16%;
+    left: 236%;
     white-space: nowrap;
     cursor: auto;
   }
   .de_VEB{
     color: white;
     position: absolute;
-    top: 88%;
+    /* top: 88%; */
+    margin-top: 40%;
     left: 93%;
     
   }

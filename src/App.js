@@ -6,23 +6,34 @@ import './App.css';
 import Header from './Component/Header';
 import UP_Header from './Component/UP_Header';
 import Footer from './Component/Footer';
+import Home from './Component/Home';
+import Design from './Component/Design';
+import InDesign from './Component/InDesign';
 function App() {
  
   return (
 
     <div className="App">
-
       <BrowserRouter>
-      <Routes>
-        {/* <Route path="/" element={<HeaderLoder/>}/> */}
-        <Route path="/" element={<Header/>}/>
-        <Route path='/UP_Header' element={<UP_Header/>}/>
-        <Route path='/Footer' element={<Footer/>}/>
-
-        {/* <Route path="/HeaderNav" element={<HeaderNav/>}/> */}
-
-      </Routes>
+      <header>
+          <Header/>
+      </header>
       
+        <Routes>
+          {/* <Route path="/" element={<HeaderLoder/>}/> */}
+          <Route path='/' element={<Home/>}/>
+          {/* <Route path='/UP_header' element={<UP_Header/>}/> */}
+
+        </Routes>
+      <div>
+        {/* <UP_Header/>
+        <Design/>
+        <InDesign/> */}
+      </div>
+
+      <footer>
+        <Footer/>
+      </footer>
       </BrowserRouter>
     </div>
   );
