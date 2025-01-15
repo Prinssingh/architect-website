@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, } from "react";
 import '../Styles/HeaderNav.css';
 import { Link } from "react-router-dom";
 import { HiOutlineBars2 } from "react-icons/hi2";
@@ -21,25 +21,56 @@ function Header() {
             delay:1,
            stagger:-0.5
     })
+    gsap.from("#cursor",{
+        x:500,
+        duration:1,
+        delay:2,
+        
+    })
       })
+
+      const cursorRef = useRef(null);
+
+      useEffect(() => {
+        const cursor = cursorRef.current;
+    
+        const handleMouseMove = (event) => {
+          if (cursor) {
+            cursor.style.left = `${event.clientX}px`;
+            cursor.style.top = `${event.clientY}px`;
+          }
+        };
+    
+        // Add the event listener to capture mouse movements for entire page
+        document.addEventListener("mousemove", handleMouseMove);
+    
+        return () => {
+          // Cleanup the event listener when the component unmounts
+          document.removeEventListener("mousemove", handleMouseMove);
+        };
+      }, []);
+    
     return ( 
         <div className=" container-fluid header ">
             {/* --------cursor------- */}
-             <div className="cursor"
-                style={{
-                    width:"10px",
-                    height:"10px",backgroundColor:"white",borderRadius:"50%",
-                    position:"fixed"
-                
-                }}
-              >
             
-              </div>
-
-              {/* <div className="B_img" style={{width:"100%",height:"100vh",}}>
-                <img src={B4} />
-              </div> */}
-
+            <div
+                id="cursor"
+                ref={cursorRef}
+                style={{
+                //   position: "absolute",
+                position:"fixed",
+                marginBottom:"18vh",
+                width: "1.5vh",
+                height: "1.5vh",
+                backgroundColor: "white",
+                borderRadius: "50%",
+                pointerEvents: "auto", 
+                transform: "translate(-50%, -50%)", 
+                zIndex: 1000, 
+                }}  
+                >     
+            </div>
 
             <div className="navBar">
                 {/* image here   */}
@@ -73,6 +104,7 @@ function Header() {
             
             <h1 className="ADV">Architecture.Design.visulization </h1>            
         </div>
+        // </div>
      );
 }
 
