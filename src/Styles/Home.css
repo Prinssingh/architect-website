@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100%;
+  }
+  
+  [data-scroll-container] {
+    /* position:absolute; */
+    overflow: hidden;
+  }
+  
+  [data-scroll-section] {    
+    min-height: 100vh;
+    padding: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }

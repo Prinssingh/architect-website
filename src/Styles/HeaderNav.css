@@ -13,10 +13,20 @@
   /* background:linear-gradient(rgba(22, 84, 129, 0.699),rgba(15, 63, 97, 0.747),rgba(19, 57, 85, 0.822),rgba(18, 56, 83, 0.822));   */
   font-size: 20px;  
   text-shadow: 2px 2px 4px #000000;
-  background-image: url(https://am-arc.com/assets/prj/prj12/p12-1.jpg);
+  /* background-image: url(https://am-arc.com/assets/prj/prj12/p12-1.jpg); */
   /* background-image: url(https://am-arc.com/assets/prj/prj16/p16-1.jpg),url(https://am-arc.com/assets/prj/prj11/p11-1.jpg),url(https://am-arc.com/assets/prj/prj12/p12-1.jpg); */
   /* background-size: cover; */
   /* background-size: contain; */
+}
+.vedioContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;  
+}
+.vedioContainer video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .navBar{
   width: 74%;
@@ -56,6 +66,7 @@ li{
     top: 5%;
     left: 80%;
     position: fixed;
+    cursor: pointer;
     padding:10px 5px ;
   }  
   .navFixBtn:hover{

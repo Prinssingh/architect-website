@@ -3,9 +3,7 @@ import '../Styles/HeaderNav.css';
 import { Link } from "react-router-dom";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { useGSAP } from '@gsap/react';
-import Carousal from "./Carousal";
 import icon from '../Assets/icon.png'
-import B4 from '../Assets/B4.jpg';
 import gsap from 'gsap';
 function Header() {
     useGSAP(()=>{
@@ -58,7 +56,7 @@ function Header() {
                 id="cursor"
                 ref={cursorRef}
                 style={{
-                //   position: "absolute",
+                  position: "absolute",
                 position:"fixed",
                 marginBottom:"18vh",
                 width: "1.5vh",
@@ -67,9 +65,18 @@ function Header() {
                 borderRadius: "50%",
                 pointerEvents: "auto", 
                 transform: "translate(-50%, -50%)", 
-                zIndex: 1000, 
+                zIndex: 1000,
                 }}  
                 >     
+            </div>
+
+            {/* ------Vedio here---- */}
+            <div className="vedioContainer" >
+              
+              <video autoPlay loop  muted >
+                <source src="/Vedios/backVedio.mp4" type="video/mp4" />
+              </video>
+
             </div>
 
             <div className="navBar">
